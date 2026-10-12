@@ -6,6 +6,9 @@ export const difficulties: Difficulty[] = [
   { id: 3, color: '#EB5757', text: 'Hard' },
 ];
 
+const TIME_LIMIT_NOTE =
+  'Your time limit depends on the difficulty you choose: Easy (45 min), Medium (30 min), Hard (15 min).';
+
 export const ieltsExamData: IeltsExamItem[] = [
   {
     id: 1,
@@ -17,11 +20,11 @@ export const ieltsExamData: IeltsExamItem[] = [
     subType: 'Academic',
     initiation_begin: 'Start your reading practice',
     important_note: [
-      'This section has 5 questions.',
-      'Each question carries different points based on complexity.',
-      'Time limit depends on difficulty: Easy (45 min), Medium (30 min), Hard (15 min).',
-      'Make sure to manage your time effectively.',
-      'You cannot skip questions once attempted.',
+      'This test contains 5 questions, and harder questions are worth more points.',
+      TIME_LIMIT_NOTE,
+      'The timer starts as soon as you begin and cannot be paused.',
+      'Once you submit an answer, you cannot go back and change it.',
+      'Skim the passage first, then read closely for the answers. Do not get stuck on one question for too long.',
     ],
   },
   {
@@ -34,11 +37,11 @@ export const ieltsExamData: IeltsExamItem[] = [
     subType: 'Academic',
     initiation_begin: 'Start your writing practice',
     important_note: [
-      'This section has 5 writing tasks.',
-      'Tasks include describing visual data and writing essays.',
-      'Time limit depends on difficulty: Easy (45 min), Medium (30 min), Hard (15 min).',
-      'Pay attention to minimum and maximum word counts for each task.',
-      'Quality is more important than quantity.',
+      'This test contains 5 writing tasks, including describing charts or graphs and writing essays.',
+      TIME_LIMIT_NOTE,
+      'Check the minimum and maximum word count shown on each task. Going under or over the limit can lower your score.',
+      'Spend a minute or two planning your structure before you start writing.',
+      'Focus on clear, well-organised ideas rather than length, and leave time to proofread.',
     ],
   },
   {
@@ -51,11 +54,11 @@ export const ieltsExamData: IeltsExamItem[] = [
     subType: 'Academic',
     initiation_begin: 'Start your listening practice',
     important_note: [
-      'This section has 5 listening questions.',
-      'Each question includes an audio transcript that will be played.',
-      'Time limit depends on difficulty: Easy (45 min), Medium (30 min), Hard (15 min).',
-      'Listen carefully as audio can only be played once.',
-      'Answer the questions based on what you hear.',
+      'This test contains 5 listening questions, each based on its own audio recording.',
+      TIME_LIMIT_NOTE,
+      'Each recording plays only once, so use headphones and sit somewhere quiet.',
+      'Read the questions before the audio starts so you know what to listen for.',
+      'Write your answer as you listen. Do not stop to think about a question you missed.',
     ],
   },
   {
@@ -68,11 +71,11 @@ export const ieltsExamData: IeltsExamItem[] = [
     subType: 'Academic',
     initiation_begin: 'Start your speaking practice',
     important_note: [
-      'This section has 3 speaking prompts.',
-      'Prompts range from personal topics to abstract discussions.',
-      'Time limit depends on difficulty: Easy (45 min), Medium (30 min), Hard (15 min).',
-      'Record your responses clearly.',
-      'Speak naturally and organize your thoughts before responding.',
+      'This test contains 3 speaking prompts, ranging from personal topics to abstract discussions.',
+      TIME_LIMIT_NOTE,
+      'Allow microphone access and test it in a quiet place before you begin.',
+      'Take a few seconds to organise your thoughts before you answer each prompt.',
+      'Speak clearly at a natural pace, and develop each answer with reasons and examples instead of one-word replies.',
     ],
   },
 ];
